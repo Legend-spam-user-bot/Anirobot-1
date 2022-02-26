@@ -1,37 +1,40 @@
-# Anirobot
-# Anirobot
-![Flare Arlgrande](https://telegra.ph/file/ba4cf0f81f99f13f683c0.jpg)
-# Anirobot
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6141417ceaf84545bab6bd671503df51)](https://app.codacy.com/gh/Asta-vir/Anirobot?utm_source=github.com&utm_medium=referral&utm_content=Asta-vir/Flare-Robot&utm_campaign=Badge_Grade_Settings)  [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Asta-vir/Flare_Robot/graphs/commit-activity) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://perso.crans.org/besson/LICENSE.html) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com) [![Updates channel!](https://img.shields.io/badge/Join%20Channel-!-red)](https://t.me/Freia_Updates)
+![KazukoRobot](https://telegra.ph/file/350a261b482087527394f.jpg)
+# Kazuko Robot 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6141417ceaf84545bab6bd671503df51)](https://app.codacy.com/gh/heyaaman/KazukoBot?utm_source=github.com&utm_medium=referral&utm_content=heyaaman/KazukoBot&utm_campaign=Badge_Grade_Settings)  [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/heyaaman/KazukoBot/graphs/commit-activity) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://perso.crans.org/besson/LICENSE.html) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com) [![Updates channel!](https://img.shields.io/badge/Join%20Channel-!-red)](https://t.me/KazukoUpdates)
+
+A Telegram Python bot running on python3 forked with saitama and DiasyX with a sqlalchemy database and an entirely themed persona to make Kazuko fun and good management for you in your groups.
+
+Can be found on telegram as [KazukoBot](https://t.me/KazukoRobot).
+
+The Support group can be reached out to at [Kazuko Support](https://t.me/KazukoSupportChat), where you can ask for help , discover new features, report bugs, and stay in the loop whenever a new update is available. 
 
 
-A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed persona to make Flare is suitable for Anime and Manga group chats. 
+News channel as at [Kazuko Updates](https://t.me/KazukoUpdates)
 
-Can be found on telegram as [Flare](https://t.me/Aniro_bot).
 
-The Support group can be reached out to at [Anirobot Support](https://t.me/Anixsuru_support), where you can ask for help about [Ani](https://t.me/Anirobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+### Heroku Deploy 
+The easiest way to deploy this Bot is via Heroku.
 
-Owner bot [suru](https://t.me/sweetttu_1) 
+<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/heyaaman/KazukoBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-## How to setup/deploy.
+### How to setup/deploy.
 
 ### Read these notes carefully before proceeding 
- - Edit any mentions of @Onepunchsupport to your own support chat
- - Your code must be open source and a link to your fork's repository must be there in the start reply of the bot
- - Lastly, if you are found to run this repo without the code being open sourced or the repository link not mentioned in the bot, we will push a gban for you in our network because of being in violation of the license, you are free to be a dick and not respect the open source code (we do not mind) but we will not be having you around our chats
- - This repo does not come with technical support, so DO NOT come to us asking help about deploy/console errors
+ - This bot is forked from yone and saitama (which is based on marie)
+ - Your code must be open source and a link to our repo
+ - Fork and deploy on your own risk...
+ 
+
 
 <details>
   <summary>Steps to deploy on Heroku !! </summary>
-
+  
 ```
 Fill in all the details, Deploy!
 Now go to https://dashboard.heroku.com/apps/(app-name)/resources ( Replace (app-name) with your app name )
 REMEMBER: Turn on worker dyno (Don't worry It's free :D) & Webhook
 Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.
 ```
-
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SuruXmanager/Anirobot)
 
 </details>  
 <details>
@@ -46,7 +49,7 @@ This is because markdown parsing is done by iterating through a dict, which is o
 There are two possible ways of configuring your bot: a config.py file, or ENV variables.
 
 The preferred version is to use a `config.py` file, as it makes it easier to see all your settings grouped together.
-This file should be placed in your `Flare_Robot` folder, alongside the `__main__.py` file. 
+This file should be placed in your `KazukoBot` folder, alongside the `__main__.py` file. 
 This is where your bot token will be loaded from, as well as your database URI (if you're using a database), and most of
 your other settings.
 
@@ -55,16 +58,16 @@ defaults set in the sample_config, hence making it easier to upgrade.
 
 An example `config.py` file could be:
 ```
-from Anirobot.sample_config import Config
+from KazukoBot.sample_config import Config
 
 class Development(Config):
-    OWNER_ID = 2105723446  # your telegram ID
-    OWNER_USERNAME = "Asta_Silva02"  # your telegram username
+    OWNER_ID = 1821151467  # your telegram ID
+    OWNER_USERNAME = "heyaaman"  # your telegram username
     API_KEY = "your bot api key"  # your api key, as provided by the @botfather
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     JOIN_LOGGER = '-1234567890' # some group chat that your bot is a member of
     USE_JOIN_LOGGER = True
-    DRAGONS = [2105723446]  # List of id's for users which have sudo access to the bot.
+    DRAGONS = [18673980, 83489514]  # List of id's for users which have sudo access to the bot.
     LOAD = []
     NO_LOAD = ['translation']
 ```
@@ -141,7 +144,7 @@ All that is needed is that your .py file is in the modules folder.
 
 To add commands, make sure to import the dispatcher via
 
-`from Flare_Robot import dispatcher`.
+`from KazukoBot import dispatcher`.
 
 You can then add commands using the usual
 
@@ -161,25 +164,29 @@ through the `/stats` command, which is only available to the bot owner.
 
 Once you've set up your database and your configuration is complete, simply run the bat file(if on windows) or run (Linux):
 
-`python3 -m Flare_Robot`
+`python3 -m KazukoBot`
 
 You can use [nssm](https://nssm.cc/usage) to install the bot as service on windows and set it to restart on /gitpull 
 Make sure to edit the start and restart bats to your needs. 
 Note: the restart bat requires that User account control be disabled.
 
-For queries or any issues regarding the bot please open an issue ticket or visit us at [One Punch Support](https://t.me/Anixsuru_support)
-## How to setup on Heroku 
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SuruXmanager/Anirobot) 
+For queries or any issues regarding the bot please open an issue ticket or visit us at [Kazuko Support](https://t.me/KazukoSupportChat)
 
 
-## Credits
-The bot is based on the original work done by [PaulSonOfLars](https://github.com/PaulSonOfLars)
-This repo was just revamped to suit an Anime-centric community. All original credits go to Paul and his dedication, Without his efforts, this fork would not have been possible!
+## Credits 📍
+CREDITS
+```
+❤️ Saitama = Sawada
+❤️ DaisyX = Inuka
+❤️ Yone = Noob kittu 
+❤️ Alpha Coders = https://alphacoders.com
+❤️ Developed by = heyaaman
+```
+## Note : While kanging or forking this repo don't change credits.
 
-Also, missing proper credit for blacklistusers taken from TheRealPhoenixBot (will add it later, this note says unless it is done)
+This repository is a mix set of other bot repositorys which mentioned on credits above developed By [heyaaman](https://github.com/heyaaman) 
 
-Any other authorship/credits can be seen through the commits.
+## Find me on telegram 
+[![Telegram](https://img.shields.io/badge/heyaaman-1b77FF.svg?style=for-the-badge&logo=telegram)](https://t.me/heyaaman)
 
-Should any be missing kindly let us know at [Flare Support](https://t.me/Anixsuru_support) or simply submit a pull request on the readme.
-	
+### If anything missing on this repository, give a pull request :)
